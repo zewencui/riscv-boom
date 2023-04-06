@@ -35,3 +35,30 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 四月 06, 2023 3:16:34 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 信息: Unsupported notification method: $/setTrace
 2023.04.06 15:17:02 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
+2023.04.06 15:25:19 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/build.sbt
+2023.04.06 15:25:24 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/build.sbt
+2023.04.06 15:28:47 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/build.sbt
+2023.04.06 15:37:36 INFO  Shutting down server
+2023.04.06 15:37:36 INFO  shutting down Metals
+2023.04.06 15:37:36 INFO  Exiting server
+2023.04.06 16:28:08 INFO  Started: Metals version 0.11.11 in workspace '/Users/zewencui/riscv-boom' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/zewencui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.06 16:28:09 INFO  time: initialize in 0.57s
+2023.04.06 16:28:10 WARN  Build server is not auto-connectable.
+2023.04.06 16:28:11 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/build.sbt
+2023.04.06 16:28:11 WARN  no build target for: /Users/zewencui/riscv-boom/src/test/scala/RegFileTest.scala
+2023.04.06 16:28:12 INFO  no build target found for /Users/zewencui/riscv-boom/src/test/scala/RegFileTest.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.06 16:28:15 INFO  time: code lens generation in 4.25s
+2023.04.06 16:28:15 INFO  time: code lens generation in 4.25s
+2023.04.06 16:28:32 WARN  no build target for: /Users/zewencui/riscv-boom/src/test/scala/TestUtils.scala
+2023.04.06 16:28:33 WARN  no build target for: /Users/zewencui/riscv-boom/src/test/scala/RegFileTest.scala
+2023.04.06 16:28:33 WARN  no build target for: /Users/zewencui/riscv-boom/src/test/scala/TestUtils.scala
+2023.04.06 16:28:34 WARN  no build target for: /Users/zewencui/riscv-boom/src/test/scala/RegFileTest.scala
+2023.04.06 16:28:47 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
+2023.04.06 17:47:08 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
+2023.04.06 18:32:25 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/icache.scala

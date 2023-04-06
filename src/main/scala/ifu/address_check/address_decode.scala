@@ -1,5 +1,8 @@
 import chisel3._
 import chisel3.util._
+import chisel3.stage.ChiselStage
+import chisel3.stage.ChiselGeneratorAnnotation
+
 
 class AddressDecoder(startAdress: UInt, endAddress: UInt) extends Module {
   val io = IO(new Bundle {
@@ -11,5 +14,6 @@ class AddressDecoder(startAdress: UInt, endAddress: UInt) extends Module {
 }
 
 object AddressDecoderMain extends App {
-  chisel3.Driver.execute(args, () => new AddressDecoder(0x1000.U, 0x2000.U))  //TODO:
+  (new ChiselStage).execute(args, Seq(ChiselGeneratorAnnotation(() => new AddressDecoder(0x1000.U, 0x2000.U))))
 }
+
