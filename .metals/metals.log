@@ -1,0 +1,37 @@
+2023.04.06 15:00:44 INFO  Started: Metals version 0.11.11 in workspace '/Users/zewencui/riscv-boom' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/zewencui/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.06 15:00:45 INFO  time: initialize in 0.57s
+四月 06, 2023 3:00:46 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1
+2023.04.06 15:00:46 WARN  Build server is not auto-connectable.
+2023.04.06 15:00:46 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/address_decode.scala
+2023.04.06 15:00:46 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/protecition_bit_checker.scala
+2023.04.06 15:00:46 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/address_alignment_checker.scala
+2023.04.06 15:00:46 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/AddAlignmentCheckerTest.scala
+2023.04.06 15:00:46 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/mem_lock.scala
+2023.04.06 15:00:49 INFO  no build target found for /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/address_alignment_checker.scala. Using presentation compiler with project's scala-library version: 3.2.2
+四月 06, 2023 3:00:49 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 11
+2023.04.06 15:00:51 INFO  time: code lens generation in 1.89s
+2023.04.06 15:00:51 INFO  time: code lens generation in 2.11s
+2023.04.06 15:00:51 INFO  time: code lens generation in 2.13s
+2023.04.06 15:01:57 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/AddressAlignmentCheckerTest.scala
+2023.04.06 15:02:16 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/AddressAlignmentCheckerTest.scala
+2023.04.06 15:03:12 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/AddressDecodeTest.scala
+2023.04.06 15:03:22 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/AddressAlignmentCheckerTest.scala
+2023.04.06 15:04:33 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/MemLockTest.scala
+2023.04.06 15:04:55 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/MemLockTest.scala
+2023.04.06 15:06:36 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/ProtectionBitCheckerTest.scala
+四月 06, 2023 3:06:55 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 153
+2023.04.06 15:07:26 WARN  no build target for: /Users/zewencui/riscv-boom/src/main/scala/ifu/address_check/ProtectionBitCheckerTest.scala
+2023.04.06 15:13:50 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
+2023.04.06 15:13:54 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
+四月 06, 2023 3:16:34 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2023.04.06 15:17:02 WARN  no build target for: /Users/zewencui/riscv-boom/build.sbt
