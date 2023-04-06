@@ -139,7 +139,12 @@ class ICacheModule(outer: ICache) extends LazyModuleImp(outer)
   val refill_valid = RegInit(false.B)
   val refill_fire = tl_out.a.fire
   val s2_miss = s2_valid && !s2_hit && !RegNext(refill_valid)
-  val refill_paddr = RegEnable(io.s1_paddr, s1_valid && !(refill_valid || s2_miss))
+  val refill_paddr = RegEnable(
+  (io.s1_paddr >> 3.U << 3.U),  // 将原地址右移 3 位 (等价于除以 8)，再左移 3 位
+  s1_valid && !(refill_valid || s2_miss)
+)
+
+  //val refill_paddr = RegEnable(io.s1_paddr, s1_valid && !(refill_valid || s2_miss))
   val refill_tag = refill_paddr(tagBits+untagBits-1,untagBits)
   val refill_idx = refill_paddr(untagBits-1,blockOffBits)
   val refill_one_beat = tl_out.d.fire && edge_out.hasData(tl_out.d.bits)
@@ -326,9 +331,15 @@ class ICacheModule(outer: ICache) extends LazyModuleImp(outer)
 
   tl_out.a.valid := s2_miss && !refill_valid && !io.s2_kill
   tl_out.a.bits := edge_out.Get(
+  fromSource = 0.U,
+  toAddress = ((refill_paddr >> blockOffBits) << blockOffBits) & "hfffffffffffffff8".U,
+  lgSize = lgCacheBlockBytes.U)._2
+  /*
+  tl_out.a.bits := edge_out.Get(
     fromSource = 0.U,
     toAddress = (refill_paddr >> blockOffBits) << blockOffBits,
     lgSize = lgCacheBlockBytes.U)._2
+  */
   tl_out.b.ready := true.B
   tl_out.c.valid := false.B
   tl_out.e.valid := false.B
